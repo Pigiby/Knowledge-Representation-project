@@ -1,0 +1,673 @@
+Prefix(:=<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse>
+Annotation(rdfs:comment "an ontology about celestial bodies, their classification and their properties")
+
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Brown_Dwarf>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Constellation>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Country>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#PlanetarySystem>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>))
+Declaration(Class(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#launchedBy>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround>))
+Declaration(DataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity>))
+Declaration(DataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass>))
+Declaration(DataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km>))
+Declaration(DataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K>))
+Declaration(DataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Andromeda>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#China>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Geostationary_orbit_GEO>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Japan>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lagrange_points>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Low_Earth_orbit_LEO>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Medium_Earth_orbit_MEO>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polar_orbit_Sun-synchronous_orbit_SSO>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Transfer_orbits_geostationary_transfer_orbit_GTO>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Usa>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Constellation>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo>)
+
+TransitiveObjectProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo>)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo>)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#PlanetarySystem>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite>)
+
+InverseObjectProperties(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf>)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#PlanetarySystem>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf>)
+
+SubObjectPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround>)
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+
+# Object Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround>)
+
+ObjectPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+ObjectPropertyRange(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> owl:topDataProperty)
+FunctionalDataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity>)
+DataPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Data Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> owl:topDataProperty)
+FunctionalDataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass>)
+DataPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Data Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> owl:topDataProperty)
+FunctionalDataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km>)
+DataPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Data Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K>)
+
+SubDataPropertyOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> owl:topDataProperty)
+FunctionalDataProperty(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K>)
+DataPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Data Property: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star>)
+
+DataPropertyDomain(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy>)
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy>)
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Active_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Blazar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Brown_Dwarf> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Brown_Dwarf>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Brown_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> "All classifications (subclasses) are taken from the NASA website.")
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Elliptical_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy> "All the names are taken from the site https://science.nasa.gov/universe/galaxies/types/")
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Irregular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lenticular_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptunian-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Quasar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Seyfert_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Super-Earth-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+# Class: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant>)
+
+SubClassOf(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Low_Earth_orbit_LEO>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#launchedBy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Japan>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Andromeda> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Andromeda>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Andromeda>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Andromeda>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Medium_Earth_orbit_MEO>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#launchedBy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#China>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> "1.075938×10^23 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> "2410.3"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto> "134"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#China> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#China>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Country> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#China>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> "1.4762×10^15 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> "6.27"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos> "233"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ASNARO-1>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Beidou_2-12>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> "5.972168×10^24 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> "6371.0"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth> "255"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> "4.79984×10^22 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> "1560.8"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa> "102"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> "1.4819×10^23 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> "2634.1"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede> "110"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Geostationary_orbit_GEO> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Geostationary_orbit_GEO>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Geostationary_orbit_GEO>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> "8.931938×10^22 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> "1821.6"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io> "110"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Japan> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Japan>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Country> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Japan>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Callisto>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Europa>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ganymede>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Io>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> "1.8982×1027 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> "69911"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Jupiter> "165"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lagrange_points> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lagrange_points>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Lagrange_points>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Low_Earth_orbit_LEO> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Low_Earth_orbit_LEO>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Low_Earth_orbit_LEO>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Deimos>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasSatellite> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> "3389.5"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars> "209"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Medium_Earth_orbit_MEO> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Medium_Earth_orbit_MEO>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Medium_Earth_orbit_MEO>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> "3.3011×1023 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> "2439.7"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mercury> "437"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Spiral_Galaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> "7.342×10^22 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> "1737.4"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Moon> "140 °C to −171 °C")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> "24622"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neptune> "72"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Natural_Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Mars>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> "1.0659×10^16 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> "11.08"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Phobos> "233"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polar_orbit_Sun-synchronous_orbit_SSO> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polar_orbit_Sun-synchronous_orbit_SSO>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polar_orbit_Sun-synchronous_orbit_SSO>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> "3 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> "5.4 M☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> "6900"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Polaris> "37.5 R☉")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Gas-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> "1.8982×10^27 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> "69911"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Saturn> "88"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#PlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasStar> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> "3.828×10^26 W")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> "1.9885×10^30 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> "696000"^^xsd:integer)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun> "15700000"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Transfer_orbits_geostationary_transfer_orbit_GTO> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Transfer_orbits_geostationary_transfer_orbit_GTO>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#OrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Transfer_orbits_geostationary_transfer_orbit_GTO>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Man-Made-Satellit> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasOrbitType> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Geostationary_orbit_GEO>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#isSatelliteOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#launchedBy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Usa>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#USA_237> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Earth>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ice-Giant-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> "(8.6810±0.0013)×10^25 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> "25362"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Uranus> "76"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Constellation> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Usa> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Usa>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Country> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Usa>)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#CelestialBody> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus>)
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Terrestrial-planet> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#belongsTo> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasGalaxy> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Milky_Way>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasPlanetarySystem> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Solar_System>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#orbitsAround> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Sun>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> "4.8675×1024 kg")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasRadius_km> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> "6051.8"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Venus> "232"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> "390 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> "2.2 M☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> "4.03"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#β_Ursae_Minoris> "42.06  R☉")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris> "1,100 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris> "8280"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#γ_Ursae_Minoris> "15 R☉")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> "47.77 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> "2.35 M☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> "9911"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#δ_Ursae_Minoris> "2.8 R☉")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ε_Ursae_Minoris> "5215"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> "227 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> "3.4 M☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> "8720"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#ζ_Ursae_Minoris> "6.15 R☉")
+
+# Individual: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> (<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris>)
+
+ClassAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#IsAStarOf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Ursa_Minor>)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasLuminosity> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> "447 L☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasMass> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> "1.86 M☉")
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#hasTemperature_K> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> "4095"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#has_radius_star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#5_Ursae_Minoris> "16 R☉")
+
+
+DisjointClasses(<http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Brown_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Main_Sequence_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Neutron_Star> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Giant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Red_Supergiant> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#White_Dwarf> <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#Yellow_supergiant>)
+)
