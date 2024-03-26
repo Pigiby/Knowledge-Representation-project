@@ -1,0 +1,145 @@
+
+### 1 
+For all the man-made satellites, give me the country who launched it and what kind of orbit it follows
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y ?z
+WHERE{ 
+
+	?x rdf:type myuniverse:Man-Made-Satellit .
+	?x myuniverse:launchedBy ?y.
+	?x myuniverse:hasOrbitType ?z
+}
+
+
+
+
+
+
+### 2
+Return all the satellites that belongs to the Solar_System
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:Satellit .
+	?x myuniverse:orbitsAround ?y .
+	?y myuniverse:hasPlanetarySystem myuniverse:Solar_System
+}
+
+
+### 3 
+
+for every celestial body give me all the other one that orbits around it
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:CelestialBody .
+	?x myuniverse:orbitsAround ?y
+}
+
+
+
+###  4 
+
+
+Give me all the Red Giant stars of a specific constellation
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:Star .
+	?x myuniverse:IsAStarOf myuniverse:Ursa_Minor .
+	?x rdf:type ?y
+
+	FILTER (?y = myuniverse:Red_Giant)
+}
+
+
+### 5
+
+give me the planets of the solar System with their relative radius
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:Planet .
+	?x myuniverse:hasPlanetarySystem myuniverse:SolarSystem .
+	?x myuniverse:hasMass ?y
+}
+
+
+### 5
+
+give me the planets of the solar System and optionally their mass
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:Planet .
+	?x myuniverse:hasPlanetarySystem myuniverse:SolarSystem .
+	?x myuniverse:hasRadius_km ?y
+}
+
+
+
+
+### 6 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y
+WHERE{ 
+
+	?x rdf:type/rdfs:subClassOf* myuniverse:Planet .
+	?x myuniverse:hasPlanetarySystem myuniverse:Solar_System .
+	OPTIONAL {?x myuniverse:hasMass ?y}
+}
+
+
+### 7
+
+Return the planets of the Solar System that has at least one satellite and return its/their name
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX myuniverse: <http://www.semanticweb.org/pgb_2/ontologies/2024/myuniverse#>
+SELECT ?x ?y
+WHERE{ 
+
+	{?x rdf:type/rdfs:subClassOf* myuniverse:Planet .
+	?x myuniverse:hasPlanetarySystem myuniverse:Solar_System .
+	?x myuniverse:hasSatellite ?y}
+		UNION
+	{?x rdf:type/rdfs:subClassOf* myuniverse:Planet .
+	?x myuniverse:hasPlanetarySystem myuniverse:Solar_System .
+	?y myuniverse:isSatelliteOf ?x}
+}
+

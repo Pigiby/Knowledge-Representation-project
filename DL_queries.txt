@@ -1,0 +1,22 @@
+### 1 Return all the stars with a temperature greater than 8000 K
+
+Star and hasTemperature_K some xsd:decimal[>8000]
+
+
+### 2 Return the man-made satellite launchedby the Japan
+
+Man-Made-Satellit and launchedBy value Japan
+
+### 3 the planets with at least 3 satellites
+
+Planet and hasSatellit min 3
+
+
+### 4 planets of the milky way that orbits around a main sequence star
+
+
+
+
+### 5 return all the stars of the ursa minor that are not red giant
+
+Star and IsAStarOf value Ursa_Minor and not(Red_Supergiant) 
